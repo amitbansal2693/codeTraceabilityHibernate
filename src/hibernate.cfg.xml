@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-configuration PUBLIC  
+          "-//Hibernate/Hibernate Configuration DTD 3.0//EN"  
+          "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">  
+  
+<hibernate-configuration>  
+  
+<session-factory>  
+ <property name="hbm2ddl.auto">create</property>  
+ <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+         <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password">root</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3307/hhsnew</property>
+        <property name="hibernate.connection.username">root</property>
+ <property name="show_sql">true</property>
+<!--  
+<property name="dialect">org.hibernate.dialect.Oracle9Dialect</property>
+<property name="connection.url">jdbc:oracle:thin:@localhost:1521:xe</property>  
+ <property name="connection.username">system</property>  
+ <property name="connection.password">root</property>
+  <property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+    -->
+<!--   <mapping class="com.traceability.Controller"/>
+  <mapping class="com.traceability.Javafiles"/>
+  <mapping class="com.traceability.DAO"/>
+   <mapping class="com.traceability.Interface"/>
+   <mapping class="com.traceability.Service"/>
+   <mapping class="com.traceability.TestFiles"/>
+   <mapping class="com.traceability.JSPFile"/> -->
+      
+<!--  <mapping class="com.testPackage.Employee"/>  
+ <mapping class="com.testPackage.Vehicle"/> -->
+ 
+<!--   <mapping class="com.oneToMany.Employee"/>  
+ <mapping class="com.oneToMany.Vehicle"/> -->
+ 
+ <!--  <mapping class="com.manyToOne.Employee"/>  
+ <mapping class="com.manyToOne.Vehicle"/> -->
+ 
+<!--  <mapping class="com.manyToMany.Employee"/>  
+ <mapping class="com.manyToMany.Vehicle"/> -->
+ 
+<!--  <mapping class="com.casecade.onetoMany.Employee"/>  
+ <mapping class="com.casecade.onetoMany.Vehicle"/> -->
+  
+ 
+  <mapping class="com.inheritance.Employee"/>  
+ <mapping class="com.inheritance.Vehicle"/>
+ <mapping class="com.inheritance.FourWheeler"/>
+ <mapping class="com.inheritance.TwoWheeler"/>
+ </session-factory>  
+  
+</hibernate-configuration>  
